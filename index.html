@@ -46,7 +46,7 @@
 	
 	 async function reloadTypebot() {
       const { default: Typebot } = await import(
-        'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.6/dist/web.js'
+        'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
       );
       Typebot.reload();
 
@@ -55,7 +55,7 @@
 	
 	
 
-    const vars       = { locale: navigator.language };
+    const vars       = { locale: navigator.language, 'is_telerany':1 };
     const container  = document.getElementById('bot-container');
     const visitorId  = 'visitor-' + Date.now();
 
